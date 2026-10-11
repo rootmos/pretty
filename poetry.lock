@@ -125,5 +125,5 @@ oldlibyaml = ["ruamel.yaml.clib ; platform_python_implementation == \"CPython\""
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.14,<4"
-content-hash = "c99a714d3a72b574692ad831f10a6904db3e19e2f7e67211518a45307fd163d1"
+python-versions = ">=3.13,<4"
+content-hash = "045c09a6660ef9190e63fa7e9498e572a809f99b014d2a6ac4b93f7394dfcb87"
