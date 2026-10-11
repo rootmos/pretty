@@ -17,7 +17,7 @@ class Formats(unittest.TestCase):
         assert fmt.ext == ".yaml"
 
     def test_pick_format(self):
-        assert pretty.pick_format(path="foo.yaml") == pretty.ruamel
+        assert pretty.pick_format(path="foo.yaml") == pretty.pretty.ruamel
 
 roundtrip_test_values = [
     (None),
