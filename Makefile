@@ -10,7 +10,7 @@ test: prepare
 
 prepare: .venv
 .venv: pyproject.toml poetry.lock
-	poetry install --with=yaml --with=test
+	poetry install --extras=yaml --with=test
 	@touch "$@"
 
 update:

@@ -109,9 +109,10 @@ dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "requests
 name = "ruamel-yaml"
 version = "0.19.1"
 description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
-optional = false
+optional = true
 python-versions = ">=3.9"
-groups = ["yaml"]
+groups = ["main"]
+markers = "extra == \"yaml\""
 files = [
     {file = "ruamel_yaml-0.19.1-py3-none-any.whl", hash = "sha256:27592957fedf6e0b62f281e96effd28043345e0e66001f97683aa9a40c667c93"},
     {file = "ruamel_yaml-0.19.1.tar.gz", hash = "sha256:53eb66cd27849eff968ebf8f0bf61f46cdac2da1d1f3576dd4ccee9b25c31993"},
@@ -123,7 +124,10 @@ jinja2 = ["ruamel.yaml.jinja2 (>=0.2)"]
 libyaml = ["ruamel.yaml.clibz (>=0.3.7) ; platform_python_implementation == \"CPython\""]
 oldlibyaml = ["ruamel.yaml.clib ; platform_python_implementation == \"CPython\""]
 
+[extras]
+yaml = ["ruamel-yaml"]
+
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13,<4"
-content-hash = "045c09a6660ef9190e63fa7e9498e572a809f99b014d2a6ac4b93f7394dfcb87"
+content-hash = "7e20b4cfa4257b5f7d148cbf9e13655cfabf789be96b8a0f2b8bb385e0936c6e"

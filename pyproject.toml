@@ -1,16 +1,18 @@
 [project]
 name = "pretty"
-version = "0.1.0"
+version = "0.1.1"
 requires-python = ">=3.13,<4"
 dependencies = []
+
+[project.optional-dependencies]
+yaml = [
+    "ruamel-yaml (>=0.19.1,<0.20.0)",
+]
 
 [dependency-groups]
 test = [
     "pytest (>=9.1.1,<10)",
     "parameterized (>=0.9.0,<0.10.0)",
-]
-yaml = [
-    "ruamel-yaml (>=0.19.1,<0.20.0)",
 ]
 
 [tool.isort]
